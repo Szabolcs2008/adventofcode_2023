@@ -34,10 +34,10 @@ for seed in seeds:
             dst_start = mapping[0]
             src_start = mapping[1]
             idx_range = mapping[2]
-            if int(seed) in range(int(src_start), int(src_start)+int(idx_range)):
+            if data[seed] in range(int(src_start), int(src_start)+int(idx_range)):
                 data[seed] = int(data[seed]) + (int(dst_start) - int(src_start))
                 found = True
-                print(seed, f"{data[seed]} = {int(data[seed]) - (int(dst_start) - int(src_start))} + ({(int(dst_start))} - {int(src_start)})", True)
+                print(seed, f"{data[seed]} = {int(data[seed]) - (int(dst_start) - int(src_start))} + ({(int(dst_start))} - {int(src_start)})", [dst_start, src_start, idx_range], True)
                 break
         if found == False:
             data[seed] = data[seed]
