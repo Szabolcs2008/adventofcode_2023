@@ -1,4 +1,4 @@
-# Szabolcs2008's adventofcode answers
+# Szabolcs2008's adventofcode solutions
 Nézd, ahogy szopok a 2023-as adventofcode-al 
 > Watch me struggle with the 2023's adventofcode
 
