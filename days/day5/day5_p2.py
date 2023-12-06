@@ -2,7 +2,7 @@ input_file = "../../puzzle.input/day5.txt"
 
 with open(input_file, "r") as file:
     file_data = file.read().split("\n")
-    seeds = list(int(item) for item in file_data[0].split()[1:])
+    seeds = list(file_data)
     seed_to_soil_idx = file_data.index("seed-to-soil map:")
     soil_to_fertiliser_idx = file_data.index("soil-to-fertilizer map:")
     fertiliser_to_water_idx = file_data.index("fertilizer-to-water map:")
