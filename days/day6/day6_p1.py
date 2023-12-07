@@ -27,4 +27,3 @@ for item in record_could_be_beaten:
     ans *= record_could_be_beaten[item]
 
 print(ans)
-
