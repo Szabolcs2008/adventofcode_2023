@@ -48,5 +48,5 @@ for hand in cards_in_hands:
 
         elif len(cards_in_hands[hand]) == 5:
             types[6].append(hand)
-
+# github teszt
 print(types)
