@@ -2,7 +2,7 @@ input_file = "../../puzzle.input/day5.txt"
 
 with open(input_file, "r") as file:
     file_data = file.read().split("\n")
-    seeds = list(file_data)
+    seed_range = list(file_data[0].split()[1:][i:i+2] for i in range(0, len(file_data[0].split()[1:]), 2))
     seed_to_soil_idx = file_data.index("seed-to-soil map:")
     soil_to_fertiliser_idx = file_data.index("soil-to-fertilizer map:")
     fertiliser_to_water_idx = file_data.index("fertilizer-to-water map:")
@@ -22,7 +22,11 @@ humidity_to_location = list(item.split() for item in file_data[humidity_to_locat
 mappings_list = [seed_to_soil, soil_to_fertiliser, fertiliser_to_water, water_to_light, light_to_temperature, temperature_to_humidity, humidity_to_location]
 
 data = {}
+seeds = []
 
+for item in seeds:
+    seeds.append(list(range(item[0, item[1]])))
+print(seeds)
 for seed in seeds:
     data[seed] = int(seed)
     for mappings in mappings_list:
