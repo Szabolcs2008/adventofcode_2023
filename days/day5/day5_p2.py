@@ -23,7 +23,7 @@ mappings_list = [seed_to_soil, soil_to_fertiliser, fertiliser_to_water, water_to
 
 data = {}
 seeds = []
-
+#I give up
 for item in seeds:
     seeds.append(list(range(item[0, item[1]])))
 print(seeds)
